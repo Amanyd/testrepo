@@ -213,6 +213,8 @@ spec:
         value: $(tasks.clone-repository.results.url)
       - name: BUILDAH_FORMAT
         value: $(params.buildah-format)
+      - name: COMPRESSION_FORMAT
+        value: "dual"
       - name: HTTP_PROXY
         value: $(tasks.init.results.http-proxy)
       - name: NO_PROXY
@@ -224,14 +226,7 @@ spec:
       runAfter:
       - prefetch-dependencies
       taskRef:
-        params:
-        - name: name
-          value: buildah-oci-ta
-        - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-buildah-oci-ta:0.9@sha256:681d9f65a7f50cb260ee576ccab551e11d63c549f1e1ef3d201da3c112855bd6
-        - name: kind
-          value: task
-        resolver: bundles
+        name: buildah-oci-ta
     - name: build-image-index
       params:
       - name: IMAGE
