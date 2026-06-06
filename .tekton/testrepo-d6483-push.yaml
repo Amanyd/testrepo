@@ -78,7 +78,7 @@ spec:
       description: Add built image into an OCI image index
       name: build-image-index
       type: string
-    - default: docker
+    - default: oci
       description: The format for the resulting image's mediaType. Valid values are
         oci or docker.
       name: buildah-format
@@ -230,7 +230,7 @@ spec:
         - name: name
           value: buildah-oci-ta
         - name: bundle
-          value: quay.io/amanyd139/task-buildah-oci-ta:0.9@sha256:41bf24f8da769a3caf5b58d6b93ec40b7fa2691fcf7fcced784ed0dcbf860f03
+          value: quay.io/amanyd139/task-buildah-oci-ta:0.9@sha256:f719cb3b4ab575055a51932aef88fda19a536074dfc0a8f6b5e5b0984a9f5bd4
         - name: kind
           value: task
         resolver: bundles
