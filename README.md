@@ -44,3 +44,4 @@ Fork [konflux-ci/testrepo](https://github.com/konflux-ci/testrepo) when you want
 //testbundle2
 
 
+# Test A: rpms-signature-scan with dual compression
