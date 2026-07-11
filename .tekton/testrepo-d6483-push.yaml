@@ -27,7 +27,7 @@ spec:
   - name: dockerfile
     value: Dockerfile
   - name: skip-checks
-    value: "true"
+    value: "false"
   pipelineSpec:
     description: |
       This pipeline is ideal for building container images from a Containerfile while maintaining trust after pipeline customization.
@@ -507,7 +507,7 @@ spec:
         - name: name
           value: rpms-signature-scan
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-rpms-signature-scan:0.2@sha256:d4e3499ad4af6869470233bef6faaa1bdd69ef56276841eeec93ce6e62deeb93
+          value: quay.io/amanyd139/task-rpms-signature-scan:0.2@sha256:d9eed75783c446f843a95cacb533e954b8ad02356de52c08189fca779962f98e
         - name: kind
           value: task
         resolver: bundles
