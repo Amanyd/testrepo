@@ -23,7 +23,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/konfluxtest139/default-tenant/testrepo-d6483-multi:{{revision}}
+    value: quay.io/konfluxtest139/default-tenant/testrepo-d6483:{{revision}}
   - name: dockerfile
     value: Dockerfile
   - name: skip-checks
