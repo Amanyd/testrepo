@@ -560,7 +560,7 @@ spec:
     - name: netrc
       optional: true
   taskRunTemplate:
-    serviceAccountName: pipeline
+    serviceAccountName: build-pipeline-testrepo-d6483
   workspaces:
   - name: git_auth
     secret:
