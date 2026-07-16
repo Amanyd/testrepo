@@ -563,4 +563,6 @@ spec:
     serviceAccountName: pipeline
   workspaces:
   - name: git_auth
-    optional: true
+    secret:
+      secretName: '{{ git_auth_secret }}'
+status: {}
