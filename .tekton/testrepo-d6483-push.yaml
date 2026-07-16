@@ -232,7 +232,7 @@ spec:
         - name: name
           value: buildah-oci-ta
         - name: bundle
-          value: quay.io/amanyd139/task-buildah-oci-ta:0.10@sha256:53d5c59209bdeca9689b8ef45bf331d74623d6e2f3a171282ee310371fd9159d
+          value: quay.io/amanyd139/task-buildah-oci-ta:0.10@sha256:e2c664c1eb56a1e24b637f7244a33be854bf530a4127b148abea858f038b44f5
         - name: kind
           value: task
         resolver: bundles
@@ -507,7 +507,7 @@ spec:
         - name: name
           value: rpms-signature-scan
         - name: bundle
-          value: quay.io/amanyd139/task-rpms-signature-scan:0.2@sha256:d7fb64cfc0bc59af9c82f97aeb4e9141cd9dcfd4ae8d66e0e51bbd529f30f3c0
+          value: quay.io/amanyd139/task-rpms-signature-scan:0.2@sha256:66c53735883acbc51695d90eb261949649c6fa47802fe908f74cd7613968e0de
         - name: kind
           value: task
         resolver: bundles
